@@ -2,9 +2,6 @@ package com.util;
 
 import com.Product;
 
-/**
- * Отвечает за единообразное представление товара в текстовом виде.
- */
 public class ProductFormatter {
 	public String format(Product product) {
 		return "(" + product.getCode() + ") "

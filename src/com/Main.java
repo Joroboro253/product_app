@@ -1,6 +1,7 @@
 package com;
 
 import java.util.Scanner;
+import javax.swing.SwingUtilities;
 
 public class Main {
 	private static final String CSV_FILE_PATH = "products.csv";

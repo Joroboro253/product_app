@@ -6,9 +6,7 @@ import java.util.List;
 import com.CSVParser;
 import com.Product;
 
-/**
- * Отвечает за загрузку товаров из CSV и хранит знание о пути к файлу.
- */
+
 public class ProductRepository {
 	private final String csvFilePath;
 	
