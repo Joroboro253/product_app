@@ -3,9 +3,8 @@ package com.repository;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.CSVParser;
-import com.Product;
-
+import com.model.Product;
+import com.util.CSVParser;
 
 public class ProductRepository {
 	private final String csvFilePath;

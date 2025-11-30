@@ -1,0 +1,34 @@
+======================PRODUCTS APP=============================================
+
+Develop an application that manages a stock of products (TVs).
+
+The application will read and write products to a CSV file like bellow:
+Sample “products” file
+
+code, brand, diagonal_size, width, height, display_technology, price, quantity
+1, Samsung, 30, 145.1, 80, LED, 234.23, 4
+2, Samsung, 28, 145.2, 80, LCD, 232.23, 1
+
+Note. The file will display, on the first row, the comma separated field definitions of a product and on the following rows will display the values of each product (each product is defined in a row)
+
+TODOs:
+1. Display a list with all the products from the file (display each field of the product like in example bellow):
+(1) Samsung (LED) 30" - 234.23$ (w:h: 145.1cm, 80cm) -> 4 in stock
+(2) Samsung (LCD) 30" - 234.23$ (w:h: 145.1cm, 80cm) -> 1 in stock
+...
+
+2. User can search products by code or brand. He will enter, in the console, a code or brand name and after he hits Enter, the console
+will print the list of products that match the search criteria (list will be displayed as in TODO #1)
+
+3. Add a new product. User will be prompted in the console to enter a value for each field and at the end (after he entered a value
+for display_technology, he will have two options: 1 - submit 2 - cancel. On submit, the new product will be saved in the products file.
+If the user choose 2 (cancel) the action will be discarded.
+
+4. Allow sorting. User will have 3 options:
+	a. by brand
+	b. by diagonal size
+	c. by price
+	
+5. Buy a TV - user will be propted to enter the code of the TV he wants to buy then will have two options 1 - buy 2 - cancel
+If he chooses 1: The product will be added to a "orders" CSV file (same structure as the one for products with one new field: order_date).
+Also, that product's quantity must be updated in the "products" file.
